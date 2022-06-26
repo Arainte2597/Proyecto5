@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+ box-sizing: border-box;
+}
+/* Resol. tel 414px */
+/* ----HEADER.... */
+.logo{
+    height: 150px;
+    
+}
+header h1{ 
+    font-size: 20px;
+    
+}
+header{
+text-align: center;
+background:linear-gradient(red, yellow, orange);font-family:sans-serif;
+}
+header h2{
+ font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    border: solid 2px;
+    background-color: white;
+
+    font-size: 10px;
+}
+#portada{
+    background-image: url(https://img.freepik.com/foto-gratis/tablas-madera-textura-fondo_143100-139.jpg?w=2000);
+     background-repeat: no-repeat;
+    background-size: cover;
+}
+.productos{
+    width: 200px;
+   height: 200px;
+    
+}
+.carrito{
+    border: solid 3px;
+    height: 40px;
+}
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "section-6 section-6"
+    "section-1 section-2"
+    "section-3 section-4"
+    "section-5 section-7"
+}
+.section-1{
+    grid-area: section-1;
+}
+.section-2{
+    grid-area: section-2;
+}
+.section-3{
+    grid-area: section-3;
+}
+.section-4{
+    grid-area: section-4;
+}
+.section-5{
+    grid-area: section-5;
+}
+.section-6{
+    grid-area: section-6;
+    text-align: center;
+    
+}
+.section-7{
+    grid-area: section-7;
+}
+p{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+footer h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+
+    margin: 30px;
+   
+
+}
+footer{
+  
+    grid-area: footer;
+    background:linear-gradient(red, yellow, orange);
+}
+.redes{
+        position: relative;
+        display: flex;
+        margin: 40px;
+        height: 40px;
+        bottom: 250px;
+     }
+ .tarjetas{
+    
+     height: 40px;
+     position: relative;
+     left: 320px;
+     bottom: 480px;
+     margin: 10px;
+    }
+    /* ---resol ipad 768px */
+@media (min-width: 768px ){
+    
+    /* ---header--- */
+    .logo{
+        height: 130px;
+        position: relative;
+        right: 200px;
+        top: 50px;
+    }
+    header h1{
+        font-size: 30px;
+    }
+    header h2{
+        font-size: 20px;
+    }
+    header nav ul li{
+     margin: 30px;
+
+    }
+
+    /* --------main------ */
+    .productos{
+        border: solid 2px;
+        width: 350px;
+    }
+    main h3{
+        font-size: 25px;
+    }
+    p{
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    /* -----footer...... */
+    footer h3{
+        font-size: 25px;
+        
+    }
+    footer h4{
+        font-size: 20px;
+        text-align: center;
+    }
+    .tarjetas{
+        height: 70px;
+        position: relative;
+        left: 600px;
+        bottom: 580px;
+        margin: 10px;
+    }
+   
+  .redes{
+    position: relative;
+    margin: 40px;
+    height: 50px;
+    bottom: 300px;
+ }
+
+}
+/*-----madia-pc----------- */
+@media (min-width: 1024px){
+    .logo{
+        height: 250px;
+        position: relative;
+        right: 350px;
+    }
+    header h1{
+        font-size:50px ;
+    }
+    header h2{
+        font-size: 35px;
+        color:#35292e;
+    }
+    header nav ul li{
+       font-size: 20px;
+       border:none;
+       background: none;
+     } 
+    /* ------main........ */
+    .productos{
+        border: solid 2px;
+        width: 500px;
+        height: 300px;
+    }
+    main h3{
+        font-size: 35px;
+    }
+    p{
+        font-size: 25px;
+        margin: 20px;
+    }
+    .carrito{
+        height: 60px;
+    }
+    /* ----footer---- */
+    
+    footer h3{
+        font-size: 35px;
+        
+    }
+    footer h4{
+        font-size: 30px;
+        text-align: center;
+        margin: 80px;
+    }
+    .tarjetas{
+        height: 130px;
+        position: relative;
+        left: 1000px;
+        bottom: 1200px;
+        margin: 30px;
+    }
+   
+    .redes{
+       position: relative;
+       margin: 40px;
+       height: 150px;
+       bottom: 620px;
+    }
+ }
