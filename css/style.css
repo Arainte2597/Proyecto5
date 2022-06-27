@@ -215,7 +215,6 @@ footer{
         height: 60px;
     }
     /* ----footer---- */
-    
     footer h3{
         font-size: 35px;
         
@@ -225,18 +224,52 @@ footer{
         text-align: center;
         margin: 80px;
     }
-    .tarjetas{
-        height: 130px;
-        position: relative;
-        left: 1000px;
-        bottom: 1200px;
-        margin: 30px;
+    
+    /* animaciones */
+.logo{
+        box-shadow:10px 10px 15px black;
+
     }
-   
-    .redes{
+    .carrito{
+        transition-duration: 1s;
+        transition-delay: 0.5s;
+    }
+    .carrito:hover{
+        transform: scale(2);
+
+    }
+    header p{
+        color: red;
+    }
+    .staff{
        position: relative;
-       margin: 40px;
-       height: 150px;
-       bottom: 620px;
+       left: 250px;
+       
+       font-size: 50px;
+       border: solid 3px;
+       width: 300px;
+       height: 120px;
+       animation-name: staff;
+       animation-duration: 6s;
+       animation-iteration-count:infinite;
+       animation-direction: alternate-reverse;
     }
+    @keyframes staff {
+        0%{
+            background-color:black;
+        }
+        25%{
+            background-color:white;
+            left: 500px;
+        }
+        50%{
+            background-color:black;
+            left: 700px;
+        }
+        100%{
+            background-color:white;
+            left: 900px;
+        }
+    }
+
  }
